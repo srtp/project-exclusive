@@ -1,0 +1,27 @@
+{
+  "extends": ["next/core-web-vitals","airbnb-base"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "linebreak-style": 0,
+    "eqeqeq":"error",
+    "camelcase":"error",
+    "padded-blocks":"off",
+    "no-console":"off",
+    "no-new-object":"error",
+    "no-await-in-loop":"error",
+    "valid-typeof":"error",
+    "require-await":"error",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+       }
+    ]
+    // "no-trailing-spaces":"warn"
+  }
+  
+}

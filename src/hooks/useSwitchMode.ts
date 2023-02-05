@@ -1,11 +1,7 @@
 import { useColorScheme } from '@mui/joy';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-type Props = {
-    status:boolean
-}
-
-function useSwitchMode({ status }: Props) {
+function useSwitchMode() {
   const { mode, setMode } = useColorScheme();
   const [mounted, setMounted] = useState(false);
 
@@ -18,3 +14,5 @@ function useSwitchMode({ status }: Props) {
   }
   return { mode, setMode };
 }
+
+export default useSwitchMode;
